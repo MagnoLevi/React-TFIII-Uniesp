@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom';
 import './style.css';
 
 const Header = () => {
     return (
-        <div className="header">
-            <h1 className='title'>React massa d+</h1>
-        </div>
+        <Link to="/">
+            <div className="header">
+                <h1 className='title'>React experiment</h1>
+            </div>
+        </Link>
     )
 }
 

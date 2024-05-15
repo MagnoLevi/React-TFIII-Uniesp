@@ -15,3 +15,14 @@ body {
   background: var(--color-primary-variant);
   color: whitesmoke;
 }
+
+.btn {
+  padding: 0.313rem;
+  border-radius: 0.313rem;
+  outline: none;
+  border: none;
+}
+
+main {
+  padding: 0.625rem;
+}
