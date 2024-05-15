@@ -1,4 +1,4 @@
-import SimpleCounter from "../../components/simple-counter"
+import SimpleCounter from "../../components/simple_counter"
 
 export const SimpletCounterPage = () => {
     return <SimpleCounter />
