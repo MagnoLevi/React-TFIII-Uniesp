@@ -3,11 +3,11 @@ import './style.css';
 
 const Header = () => {
     return (
-        <Link to="/">
-            <div className="header">
-                <h1>React experiment</h1>
-            </div>
-        </Link>
+        <div className="header">
+            <Link to="/" className='link'>
+                React experiment
+            </Link>
+        </div>
     )
 }
 

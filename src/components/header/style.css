@@ -9,13 +9,14 @@
     padding: 0 30px;
 }
 
-.header h1{
+.header .link {
+    font-size: 52px;
+    font-weight: 600;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.header h1:hover{
-    filter: brightness(0.8);
+.header .link:hover{
     text-decoration: underline;
 }
-
