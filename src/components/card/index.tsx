@@ -13,7 +13,7 @@ export const Cards = ({ image, title, route }: CardProps) => {
             <div className="card">
                 <div className="image">
                     {image}
-                    {title}
+                    <span>{title}</span>
                 </div>
             </div>
         </Link>

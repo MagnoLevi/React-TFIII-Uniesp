@@ -1,4 +1,4 @@
-import { FaList, FaPlus, FaSearch } from "react-icons/fa";
+import { FaAtom, FaList, FaPlus, FaSearch } from "react-icons/fa";
 import "./style.css"
 import { Cards } from "../../components/card"
 
@@ -18,6 +18,11 @@ const Home = () => {
             "image": <FaSearch />,
             "title": "Filter Search",
             "route": "FilterSearch",
+        },
+        {
+            "image": <FaAtom />,
+            "title": "Context Api",
+            "route": "ContextApi",
         }
     ];
 

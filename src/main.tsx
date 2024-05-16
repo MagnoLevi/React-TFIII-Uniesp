@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SimpleCounter } from './pages/simple_counter';
 import { DisplayList } from './pages/display_list';
 import Footer from './components/footer'
+import ContextApi from './pages/context_api'
 
 
 ReactDOM.createRoot(document.querySelector('#root')!).render(
@@ -17,6 +18,8 @@ ReactDOM.createRoot(document.querySelector('#root')!).render(
         <Route path='/' element={<Home />}></Route>
         <Route path='/SimpleCounter' element={<SimpleCounter />}></Route>
         <Route path='/DisplayList' element={<DisplayList />}></Route>
+        <Route path='/ContextApi' element={<ContextApi />}></Route>
+        {/* <Route path='/FilterSearch' element={<FilterSearch />}></Route> */}
       </Routes>
       <Footer />
     </BrowserRouter>

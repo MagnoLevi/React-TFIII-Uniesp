@@ -1,6 +1,7 @@
 .home-content {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     width: 90%;
