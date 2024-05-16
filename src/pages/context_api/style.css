@@ -1,0 +1,30 @@
+.theme-container {
+    margin: 50px auto;
+    background-color: var(--color-primary-dark);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.theme-icon {
+    color: #fff;
+    font-size: 162px;
+}
+
+.theme-button {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    color: var(--color-primary-dark);
+    background-color: #fff;
+}
