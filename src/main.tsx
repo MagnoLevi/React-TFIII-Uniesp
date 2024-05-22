@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style.css'
-import Home from './pages/home'
-import Header from './components/header'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/header'
+import Footer from './components/footer'
+import Home from './pages/home'
+
 import { SimpleCounter } from './pages/simple_counter';
 import { DisplayList } from './pages/display_list';
-import Footer from './components/footer'
 import ContextApi from './pages/context_api'
+import { FecthCall } from './pages/fetch_call'
 
 
 ReactDOM.createRoot(document.querySelector('#root')!).render(
@@ -16,10 +18,10 @@ ReactDOM.createRoot(document.querySelector('#root')!).render(
       <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/SimpleCounter' element={<SimpleCounter />}></Route>
-        <Route path='/DisplayList' element={<DisplayList />}></Route>
-        <Route path='/ContextApi' element={<ContextApi />}></Route>
-        {/* <Route path='/FilterSearch' element={<FilterSearch />}></Route> */}
+        <Route path='/simple_counter' element={<SimpleCounter />}></Route>
+        <Route path='/display_list' element={<DisplayList />}></Route>
+        <Route path='/context_api' element={<ContextApi />}></Route>
+        <Route path='/fetch_call' element={<FecthCall />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
