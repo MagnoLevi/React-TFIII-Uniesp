@@ -1,4 +1,4 @@
-import { FaAtom, FaList, FaPlus, FaRegIdBadge, FaSearch } from "react-icons/fa";
+import { FaAtom, FaList, FaPlus, FaPoo, FaRegIdBadge, FaSearch } from "react-icons/fa";
 import "./style.css"
 import { Cards } from "../../components/card"
 
@@ -29,13 +29,18 @@ const Home = () => {
             "title": "Fetch Call",
             "route": "fetch_call",
         },
+        {
+            "image": <FaPoo />,
+            "title": "Axios Call",
+            "route": "axios_call",
+        }
     ];
 
     return (
         <div className="home">
             <div className="home-content">
-                {data.map((item) => (
-                    <div className="cards">
+                {data.map((item, index) => (
+                    <div className="cards" key={index}>
                         <Cards 
                             image={item.image}
                             title={item.title}

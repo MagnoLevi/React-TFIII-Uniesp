@@ -10,6 +10,7 @@ import { SimpleCounter } from './pages/simple_counter';
 import { DisplayList } from './pages/display_list';
 import ContextApi from './pages/context_api'
 import { FecthCall } from './pages/fetch_call'
+import { AxiosCall } from './pages/axios_call'
 
 
 ReactDOM.createRoot(document.querySelector('#root')!).render(
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.querySelector('#root')!).render(
         <Route path='/display_list' element={<DisplayList />}></Route>
         <Route path='/context_api' element={<ContextApi />}></Route>
         <Route path='/fetch_call' element={<FecthCall />}></Route>
+        <Route path='/axios_call' element={<AxiosCall />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
